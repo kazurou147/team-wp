@@ -1,0 +1,44 @@
+/* Button  */
+
+.c-btn01 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 20px 10px 0;
+    border: 1px solid #313131;
+    border-radius: 35px;
+    color: #fff;
+    background-color: #313131;
+    text-align: center;
+    transition: all 0.2s linear;
+    box-sizing: border-box;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: 40px;
+        height: 2px;
+        background: #fff;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 43%;
+        right: 12px;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        transform: rotate(30deg);
+    }
+    &:hover {
+        border: 1px solid $main-color;
+        color: #fff;
+        background-color: $main-color;
+        text-decoration: none;
+    }
+}

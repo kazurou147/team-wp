@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/* 1, Elements  */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #000;
+    background-color: #fff;
+    font-family: 'Noto Sans JP', "Yu Gothic Medium", "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    //font-family: "Yu Gothic Medium", "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    //letter-spacing: 0.08em;
+    @include sp {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+blockquote {
+    position: relative;
+    padding: 20px 30px 5px 40px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+blockquote p {
+    //margin: 0;
+}
+
+blockquote:before {
+    content: "“";
+    position: absolute;
+    top: 8px;
+    left: -15px;
+    width: 40px;
+    height: 30px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #7ECCE9;
+    color: #fff;
+    font-size: 3.7rem;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    box-shadow: 1px 1px 2px #999;
+}
+
+blockquote:after {
+    position: absolute;
+    content: '';
+    top: 38px;
+    left: -15px;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 15px #477586;
+    /*折り返し部分*/
+}
+
+sup {
+    vertical-align: text-top;
+    font-size: 0.4em;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.aligncenter {
+    display: block;
+    margin: 30px auto;
+}
+
+.alignleft {
+    float: left;
+    margin: 8px 20px 8px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 8px 0px 8px 20px;
+}
+
+@media screen and (max-width: 670px) {
+    .alignleft {
+        float: none;
+        display: block;
+        margin: 30px auto;
+    }
+    .alignright {
+        float: none;
+        display: block;
+        margin: 30px auto;
+    }
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.pc-none {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
+
+/* 1-1, H1-H6 */
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.1rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+h5 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+h6 {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+}
+
+ol {
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+}
+
+table {
+    margin-bottom: 20px;
+    th {
+        padding: 5px;
+        border: 1px solid #777;
+        background-color: #efefef;
+    }
+    td {
+        padding: 5px 10px;
+        border: 1px solid #777;
+    }
+}

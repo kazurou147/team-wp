@@ -1,0 +1,34 @@
+/* page */
+
+
+/* キービジュアル */
+
+.l-page-kv {
+    position: relative;
+    height: 180px;
+    margin: 0 0 10px 0;
+    padding: 60px 0 20px 0;
+    background: $main-color;
+    color: #fff;
+}
+
+.l-page-kv-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.l-page-kv-body {
+    position: relative;
+    z-index: 5;
+}

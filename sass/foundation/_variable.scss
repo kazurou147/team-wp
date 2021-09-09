@@ -1,0 +1,59 @@
+/*Variable
+－－－－－－－*/
+
+
+/*
+ブレークポイント
+
+基本  1920px
+ipad 1050px
+sp   767px;
+
+コンテンツ幅1000px
+
+*/
+
+$break-pc: 1200px;
+$break-tb: 1050px;
+$break-sp: 767px;
+$break-w800: 840px;
+$break-w1200: 1200px;
+$break-header: 1150px;
+@mixin pc {
+    @media screen and (max-width: ($break-pc)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: ($break-sp)) {
+        @content;
+    }
+}
+
+@mixin tb {
+    @media screen and (max-width: ($break-tb)) {
+        @content;
+    }
+}
+
+@mixin w800 {
+    @media screen and (max-width: ($break-w800)) {
+        @content;
+    }
+}
+
+@mixin w1200 {
+    @media screen and (max-width: ($break-w1200)) {
+        @content;
+    }
+}
+
+@mixin header {
+    @media screen and (max-width: ($break-header)) {
+        @content;
+    }
+}
+
+$main-color: #32a3e0;
+$gray: #ddd;

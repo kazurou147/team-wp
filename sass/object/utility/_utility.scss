@@ -1,0 +1,174 @@
+/* margin top */
+
+.u-mt10 {
+    margin-top: 10px;
+}
+
+.u-mt15 {
+    margin-top: 15px;
+}
+
+.u-mt20 {
+    margin-top: 20px;
+}
+
+.u-mt30 {
+    margin-top: 30px;
+}
+
+.u-mt40 {
+    margin-top: 40px;
+}
+
+
+/* margin bottom */
+
+.u-mb0 {
+    margin-bottom: 0px;
+}
+
+.u-mb10 {
+    margin-bottom: 10px;
+}
+
+.u-mb15 {
+    margin-bottom: 15px;
+}
+
+.u-mb20 {
+    margin-bottom: 20px;
+}
+
+.u-mb30 {
+    margin-bottom: 30px;
+}
+
+.u-mb40 {
+    margin-bottom: 40px;
+}
+
+.u-mb50 {
+    margin-bottom: 50px;
+}
+
+.u-mb55 {
+    margin-bottom: 55px;
+}
+
+.u-mb60 {
+    margin-bottom: 60px;
+}
+
+.u-mb70 {
+    margin-bottom: 70px;
+}
+
+.u-mb80 {
+    margin-bottom: 80px;
+}
+
+.u-mb90 {
+    margin-bottom: 90px;
+}
+
+.u-mb100 {
+    margin-bottom: 100px;
+}
+
+//margin right
+.u-mr10 {
+    margin-right: 10px;
+}
+
+.u-mr20 {
+    margin-right: 20px;
+}
+
+
+/* padding top */
+
+.u-pt0 {
+    padding-top: 0px;
+}
+
+.u-pt10 {
+    padding-top: 10px;
+}
+
+.u-pt15 {
+    padding-top: 15px;
+}
+
+.u-pt20 {
+    padding-top: 20px;
+}
+
+.u-pt30 {
+    padding-top: 30px;
+}
+
+.u-pt40 {
+    padding-top: 40px;
+}
+
+.u-pt50 {
+    padding-top: 40px;
+}
+
+@include sp {
+    .u-pt0-sp {
+        padding-top: 0;
+    }
+}
+
+
+/* text align */
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-text-left {
+    text-align: left;
+}
+
+.u-text-right {
+    text-align: center;
+}
+
+@include sp {
+    .u-text-left-sp {
+        text-align: left;
+    }
+}
+
+
+/* レスポンシブの改行 */
+
+.u-pc-none {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
+.u-tb-show {
+    display: none;
+    @include tb {
+        display: block;
+    }
+}
+
+.u-tb-none {
+    display: block;
+    @include tb {
+        display: none;
+    }
+}
+
+.u-sp-none {
+    display: block;
+    @include sp {
+        display: none;
+    }
+}

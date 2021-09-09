@@ -1,0 +1,202 @@
+/* ブログ 個別記事 */
+
+// ブログ　全体
+.l-blog-kv {
+    position: relative;
+    height: 180px;
+    margin: 0 0 10px 0;
+    padding: 60px 0 20px 0;
+    background: $main-color;
+    color: #fff;
+}
+
+// ブログ内の文章　デザイン
+.l-post-list {
+    p {
+        margin: 0em 0 1.5em 0;
+    }
+    table {
+        margin: 0em 0 1.5em 0;
+        max-width: 100%;
+        width: 100%;
+        @include sp {
+            width: 100% !important;
+        }
+        th {
+            padding: 10px 10px 10px 10px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px dotted #DEDEDE;
+            background-color: transparent;
+            text-align: left;
+            @include sp {
+                display: block;
+                padding: 10px 10px 0 10px;
+                border-bottom: none;
+            }
+        }
+        td {
+            padding: 10px 10px 10px 10px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px dotted #DEDEDE;
+            @include sp {
+                display: block;
+            }
+        }
+    }
+}
+
+.l-post-info {
+    margin-bottom: 20px;
+    padding: 0 0px 0 0px;
+}
+
+.l-post-info a {
+    text-decoration: none;
+}
+
+.pagenation_single {
+    display: flex;
+    width: 100%;
+    margin: 0px auto 40px auto;
+    padding-top: 80px;
+    @include sp {
+        width: 100%;
+    }
+}
+
+.pagenation_single-prev {
+    width: 50%;
+    a {
+        display: block;
+        text-decoration: underline;
+    }
+}
+
+.pagenation_single-next {
+    width: 50%;
+    a {
+        display: block;
+        text-decoration: underline;
+        text-align: right;
+    }
+}
+
+
+/* ブログ　記事一覧 */
+
+.l-post-list-body {
+    display: flex;
+    padding: 10px 0px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.l-post-list-info {
+    width: 110px;
+    margin: 0;
+    padding: 0 0 0 0px;
+}
+
+.l-post-list-title {
+    width: calc(100% - 110px);
+    margin-bottom: 5px;
+    padding: 0 0px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.6;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/* リストのリンク */
+
+.post-list-item-link {
+    color: #444;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    &:hover {
+        text-decoration: none;
+        img {
+            transform: scale(1.1);
+        }
+        .post-list-title {
+            text-decoration: none;
+        }
+    }
+}
+
+
+/* ページネーション */
+
+.wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0 100px 0px;
+    font-size: 14px;
+    &>a.page {
+        display: block;
+        width: 32px;
+        height: 32px;
+        min-height: 32px;
+        margin: 0 3px;
+        padding: 2px 0 0 0;
+        border: 1px solid $main-color;
+        border-radius: 10px;
+        background-color: #fff;
+        color: $main-color;
+        text-align: center;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    &>span.current {
+        display: block;
+        width: 32px;
+        height: 32px;
+        min-height: 32px;
+        padding: 2px 0 0 0;
+        border: 1px solid $main-color;
+        border-radius: 10px;
+        background-color: $main-color;
+        color: #fff;
+        text-align: center;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    .previouspostslink,
+    .nextpostslink {
+        width: 25px;
+    }
+}
+
+.previouspostslink {
+    width: 75px;
+    height: 32px;
+    display: block;
+    padding: 6px 6px 0px 0;
+    background: url('./img/icon_pagenation_single-prev.png') no-repeat 100% 0;
+    color: #001D66;
+    text-decoration: none;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.nextpostslink {
+    width: 75px;
+    height: 32px;
+    display: block;
+    padding: 6px 0px 0px 6px;
+    background: url('./img/icon_pagenation_single-next.png') no-repeat 0% 0;
+    color: #001D66;
+    text-decoration: none;
+    text-align: left;
+    box-sizing: border-box;
+}

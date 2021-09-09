@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0 auto 0px auto;
+    padding: 0px 0 0 0;
+    background-color: #fff;
+    z-index: 777;
+}
+
+
+/* IE 用 */
+
+@media all and (-ms-high-contrast: none) {
+    header {
+        position: relative;
+    }
+}
+
+.l-header-wrap {
+    display: flex;
+    margin: 0 auto;
+    @include tb {
+        display: block;
+    }
+}
+
+.l-header-left {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @include tb {
+        display: block;
+    }
+}
+
+.l-header-branding {
+    width: 200px;
+    margin: 0px 0px 0 0px;
+    padding: 0px 0;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.l-header-right {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 0px;
+    width: calc(100% - 200px);
+    margin: 0 0 0px 0;
+    padding: 0px 0 0 0;
+    @include tb {
+        display: none;
+    }
+}
+
+
+/* Navi */
+
+.l-nav-wrap {
+    display: flex;
+    align-items: flex-end;
+    //justify-content: space-between;
+    margin: 0;
+    padding: 40px 20px 0 40px;
+    @include header {
+        padding: 40px 10px 0 10px;
+    }
+    @include tb {
+        display: none;
+    }
+}
+
+.l-header-contact {
+    padding-top: 12px;
+    text-align: center;
+    a {
+        display: block;
+        position: relative;
+        width: 160px;
+        height: 35px;
+        margin: auto;
+        padding: 5px 0 0 5px;
+        border: 2px solid #000;
+        background: url(./img/icon_email02.png) no-repeat 10px 48%;
+        background-color: #fff;
+        line-height: 2;
+        text-decoration: none;
+        text-align: center;
+        transition: 0.3s;
+        font-size: 1.4rem;
+        font-weight: bold;
+        &:hover {
+            //border: 2px solid $main-color;
+            background-color: $main-color;
+        }
+    }
+}
