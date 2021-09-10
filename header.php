@@ -38,8 +38,6 @@
               </a>
             </div>
 
-
-
           </div><!-- /l-header-left -->
 
 
@@ -59,13 +57,6 @@
                 <?php endif; ?>
               </nav>
             </div>
-
-            <div class="l-header-contact">
-              <a href="/contact/">
-                お問い合わせ
-              </a>
-            </div>
-
 
           </div><!-- /l-header-right -->
 

@@ -20,7 +20,7 @@ if (!is_front_page()) : ?>
         <div class="l-footer-menu-item">
           <?php if (has_nav_menu('footer-menu1')) : ?>
             <?php wp_nav_menu(array(
-              'theme_location' => 'footer-menu2'
+              'theme_location' => 'footer-menu1'
             ));
             ?>
           <?php endif; ?>
