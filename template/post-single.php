@@ -1,4 +1,5 @@
-<!-- コンテンツ  -->
+<!-- ブログ　個別記事  -->
+
 <div class="l-post-info">
   <span class="l-post-into_time">
     <time datetime="<?php echo esc_html(get_the_date('c')); ?>">
