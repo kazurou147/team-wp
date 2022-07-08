@@ -2,17 +2,17 @@
 
 
 
-<div id="content" class="l-site-content">
+<div class="l-site__content">
   <!-- サイトコンテンツ -->
 
-  <main id="main" class="l-blog-area">
+  <main class="l-site__main l-blog__main">
 
 
     <!-- キービジュアル -->
     <?php get_template_part('template/page', 'kv'); ?>
 
     <!-- パンくずリスト -->
-    <div class="l-breadcrumbs-wrap">
+    <div class="l-breadcrumps">
       <div class="l-container">
         <div class="c-breadcrumbs">
           <?php if (function_exists('bcn_display')) {
@@ -25,21 +25,15 @@
 
 
     <!--　コンテンツ全体　-->
-    <div class="l-blog-content-outer">
+    <div class="l-blog-content__outer">
       <div class="l-container">
 
         <!-- 2カラム -->
-        <div class="l-blog-cotent-row">
-
-
-          <!-- サイドバー -->
-          <div class="l-sidebar-wrap">
-            <?php get_sidebar(); ?>
-          </div>
+        <div class="l-blog__cotent">
 
 
           <!-- コンテンツ -->
-          <div class="l-blog-post-wrap">
+          <div class="l-blog__post">
 
             <div class="l-post-list">
 
@@ -53,10 +47,10 @@
                   while (have_posts()) : the_post(); ?>
 
 
-                    <!-- コンテンツ  -->
+                <!-- コンテンツ  -->
 
 
-                    <?php get_template_part('template/post', 'list'); ?>
+                <?php get_template_part('template/post', 'list'); ?>
 
 
                 <?php endwhile;
@@ -65,8 +59,8 @@
                 <!-- pagenation -->
                 <?php if (paginate_links()) : //ページが1ページ以上あれば以下を表示 
                 ?>
-                  <div class="l-blog-pagenation">
-                    <?php
+                <div class="l-blog__pagenation">
+                  <?php
                     echo
                     paginate_links(
                       array(
@@ -78,30 +72,34 @@
                       )
                     );
                     ?>
-                  </div><!-- /pagenation -->
+                </div><!-- /pagenation -->
                 <?php endif; ?>
 
               </article>
 
-            </div><!-- /l-blog-post-wrap -->
+            </div><!-- /l-post-list -->
 
 
-          </div><!-- /l-blog-post-wrap -->
+          </div><!-- /l-blog__post -->
 
 
-        </div><!-- /l-blog-cotent-row -->
+          <!-- サイドバー -->
+          <div class="l-sidebar">
+            <?php get_sidebar(); ?>
+          </div>
+
+
+        </div><!-- /l-blog__cotent -->
 
       </div><!-- /l-container -->
 
-    </div><!-- /l-blog-content-outer -->
+    </div><!-- /l-blog-content__outer -->
 
 
-  </main> <!--  id="main" class="site-main" -->
+  </main> <!--  /l-site__main -->
 
 
-  <div class="clear-fix"></div>
-
-</div><!-- id="content" class="site-content" -->
+</div><!-- /l-site__content -->
 
 
 

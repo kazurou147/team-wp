@@ -2,7 +2,7 @@
 
 
 
-<div id="content" class="l-site-content">
+<div  class="l-site-content">
   <!-- サイトコンテンツ -->
 
   <main id="main" class="l-blog-area">
@@ -12,7 +12,7 @@
     <?php get_template_part('template/page', 'kv'); ?>
 
     <!-- パンくずリスト -->
-    <div class="l-breadcrumbs-wrap">
+    <div class="l-breadcrumps">
       <div class="l-container">
         <div class="c-breadcrumbs">
           <?php if (function_exists('bcn_display')) {
@@ -99,9 +99,9 @@
   </main> <!--  id="main" class="site-main" -->
 
 
-  <div class="clear-fix"></div>
+  
 
-</div><!-- id="content" class="site-content" -->
+</div><!--  class="site-content" -->
 
 
 

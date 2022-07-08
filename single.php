@@ -2,24 +2,23 @@
 
 
 
-<div id="content" class="l-site-content">
+<div class="l-site__content">
   <!-- サイトコンテンツ -->
 
-  <main id="main" class="l-blog-area">
+  <main class="l-site__main l-blog__main l-single__main">
 
 
     <!-- キービジュアル -->
-    <?php  get_template_part('template/page','kv'); ?>
+    <?php get_template_part('template/page', 'kv'); ?>
 
 
     <!-- パンくずリスト -->
-    <div class="l-breadcrumbs-wrap">
+    <div class="l-breadcrumbs">
       <div class="l-container">
         <div class="c-breadcrumbs">
-          <?php if(function_exists('bcn_display'))
-          {
-          bcn_display();
-          }?>
+          <?php if (function_exists('bcn_display')) {
+            bcn_display();
+          } ?>
         </div>
       </div>
     </div>
@@ -27,43 +26,48 @@
 
 
     <!--　コンテンツ全体　-->
-    <div class="l-blog-content-outer">
+    <div class="l-blog-content__outer">
       <div class="l-container">
 
         <!-- 2カラム -->
-        <div class="l-blog-cotent-row">
-
-
-          <!-- サイドバー -->
-          <div class="l-sidebar-wrap">
-            <?php get_sidebar(); ?>
-          </div>
+        <div class="l-blog__cotent">
 
 
           <!-- コンテンツ -->
-          <div class="l-blog-post-wrap">
+          <div class="l-blog__post">
 
             <div class="l-post-list">
+
 
               <!-- 記事 -->
 
               <article <?php post_class(); ?>>
-                <?php  if(have_posts()):
-                while(have_posts()): the_post(); ?>
+
+                <h2>ニュース</h2>
+
+                <?php if (have_posts()) :
+                  while (have_posts()) : the_post(); ?>
 
 
-                <?php get_template_part('template/post','single') ; ?>
+                <!-- コンテンツ  -->
 
 
-                <?php endwhile; endif; ?>
+                <?php get_template_part('template/post', 'single'); ?>
+
+
+                <?php endwhile;
+                endif; ?>
+
+
+
 
                 <div class="pagenation_single">
                   <span class="pagenation_single-prev">
-                    <?php previous_post_link('%link','&lt;&nbsp;古い記事'); ?>
+                    <?php previous_post_link('%link', '&lt;&nbsp;古い記事'); ?>
                   </span>
 
                   <span class="pagenation_single-next">
-                    <?php next_post_link('%link','新しい記事&nbsp;&gt;'); ?>
+                    <?php next_post_link('%link', '新しい記事&nbsp;&gt;'); ?>
                   </span>
                 </div>
 
@@ -73,6 +77,11 @@
 
 
           </div><!-- /l-blog-post-wrap -->
+
+          <!-- サイドバー -->
+          <div class="l-sidebar">
+            <?php get_sidebar(); ?>
+          </div>
 
 
         </div><!-- /l-blog-cotent-row -->
@@ -85,9 +94,9 @@
   </main> <!--  id="main" class="site-main" -->
 
 
-  <div class="clear-fix"></div>
 
-</div><!-- id="content" class="site-content" -->
+
+</div><!--  class="site-content" -->
 
 
 

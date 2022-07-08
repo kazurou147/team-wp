@@ -1,2 +1,2 @@
 <?php
-dynamic_sidebar();
+dynamic_sidebar('column1');

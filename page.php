@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
+<?php remove_filter('the_content', 'wpautop'); ?>
 
-
-<div id="content" class="l-site-content">
+<div  class="l-site__content">
   <!-- サイトコンテンツ -->
 
-  <main id="main" class="l-page-area">
+  <main class="l-site__main l-page__main">
 
 
     <!-- キービジュアル -->
@@ -15,7 +15,7 @@
 
 
     <!-- パンくずリスト -->
-    <div class="l-breadcrumbs-wrap">
+    <div class="l-breadcrumps">
       <div class="l-container">
         <div class="c-breadcrumbs">
           <?php if (function_exists('bcn_display')) {
@@ -38,7 +38,7 @@
           <?php if (have_posts()) :
             while (have_posts()) : the_post(); ?>
 
-              <?php the_content();  ?>
+          <?php the_content();  ?>
 
           <?php endwhile;
           endif; ?>
@@ -53,7 +53,7 @@
   </main>
 
 
-  <div class="clear-fix"></div>
+  
 
 </div><!-- class="l-site-content" -->
 

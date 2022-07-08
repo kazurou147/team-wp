@@ -8,6 +8,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 30px;
+
     @include tb {
         width: 100%;
         padding: 0 15px;
@@ -22,6 +23,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 30px;
+
     @include tb {
         width: 100%;
         padding: 0 15px;
@@ -29,13 +31,13 @@
 }
 
 
-/*　小さい幅　*/
-
+/* 小さい幅 */
 .l-container-small {
     width: 900px;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 30px;
+
     @include tb {
         width: 100%;
         padding: 0 15px;
@@ -45,7 +47,7 @@
 
 /* Breadcrumbs */
 
-.l-breadcrumbs-area {
+.l-breadcrumbs {
     margin: 30px 0 30px 0;
     background-color: #fff;
     font-size: 1.4rem;

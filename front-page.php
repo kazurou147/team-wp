@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 
-<div class="l-site-content">
+<div class="l-site__content">
   <!-- サイトコンテンツ -->
 
-  <main id="main" class="l-site-main">
+  <main class="l-site__main l-front__main">
 
     <!-- 記事 -->
 
@@ -74,9 +74,9 @@
 
 
 
-  </main> <!-- class="l-site-main" -->
+  </main> <!-- class="l-site__main" -->
 
-</div><!-- class="l-site-content" -->
+</div><!-- class="l-site__content" -->
 
 
 <?php get_footer(); ?>

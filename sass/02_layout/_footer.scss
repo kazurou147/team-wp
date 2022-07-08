@@ -5,7 +5,7 @@ footer {
     background: $main-color;
 }
 
-.l-footer-main-wrap {
+.l-footer__main {
     padding: 50px 0 0px 0;
 }
 
@@ -13,43 +13,51 @@ footer .menu {
     list-style: none;
     margin: 0 0 0 0px;
     padding: 0;
+
     >li {
         margin: 0 0 10px 0px;
+
         a {
             color: #fff;
             font-weight: bold;
             text-decoration: none;
+
             &:hover {
                 text-decoration: underline;
             }
         }
     }
+
     .sub-menu {
         list-style: none;
         margin: 0 0 0 0px;
         padding: 6px 0 0 20px;
+
         @include sp {
             padding: 6px 0 0 10px;
         }
+
         >li {
             margin: 0 0 6px 0px;
+
             a {
                 font-weight: normal;
             }
         }
     }
+
     .current-menu-item {
         color: inherit;
     }
 }
 
-.l-footer-bottom-wrap {
+.l-footer__bottom {
     width: 100%;
     color: #fff;
     text-align: center;
 }
 
-.l-footer-copyright {
+.l-footer__copyright {
     display: block;
     padding: 20px 0;
     font-style: normal;

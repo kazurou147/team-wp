@@ -12,14 +12,14 @@ if (!is_front_page()) : ?>
 <footer>
 
 
-  <div class="l-footer-main-wrap">
+  <div class="l-footer__main">
 
     <div class="l-container">
 
-      <div class="l-footer-menu-area">
-        <div class="l-footer-menu-item">
+      <div class="l-footer-menu">
+        <div class="l-footer-menu__item">
           <?php if (has_nav_menu('footer-menu1')) : ?>
-            <?php wp_nav_menu(array(
+          <?php wp_nav_menu(array(
               'theme_location' => 'footer-menu1'
             ));
             ?>
@@ -30,9 +30,9 @@ if (!is_front_page()) : ?>
 
 
 
-      <div class="l-footer-bottom-wrap">
-        <div class="l-footer-bottom l-container">
-          <i class="l-footer-copyright">© All Rights Reserved.</i>
+      <div class="l-footer__bottom">
+        <div class="l-container">
+          <i class="l-footer__copyright">© All Rights Reserved.</i>
         </div>
       </div>
 
@@ -41,21 +41,11 @@ if (!is_front_page()) : ?>
 
   </div>
 
-
-
-
 </footer>
-
-
 
 </div><!-- /l-site -->
 
 <?php wp_footer(); ?>
-
-
-
-
-
 
 
 

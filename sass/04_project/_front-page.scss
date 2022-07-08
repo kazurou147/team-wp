@@ -3,7 +3,7 @@
 
 /* Main Visual */
 
-.l-main-visual {
+.p-main-visual {
     position: relative;
     max-width: 100%;
     width: 100%;
@@ -12,8 +12,9 @@
     background-color: $main-color;
 }
 
-.l-front-sec01 {
+.p-front-sec01 {
     padding: 50px 0 20px 0;
+
     @include sp {
         padding: 20px 0 20px 0;
     }

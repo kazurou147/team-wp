@@ -2,17 +2,16 @@
 
 /* Scss Document */
 
-@import "foundation/index";
-@import "foundation/variable";
-@import "foundation/reset";
-@import "layout/elements";
-@import "layout/content";
-@import "layout/header";
-@import "layout/blog";
-@import "layout/front-page";
-@import "layout/page";
-@import "layout/sidebar";
-@import "layout/footer";
-@import "object/component/**";
-@import "object/project/**";
-@import "object/utility/**";
+@import "01_foundation/index";
+@import "01_foundation/variable";
+@import "01_foundation/reset";
+@import "01_foundation/elements";
+@import "02_layout/content";
+@import "02_layout/header";
+@import "02_layout/blog";
+@import "02_layout/page";
+@import "02_layout/sidebar";
+@import "02_layout/footer";
+@import "03_component/**";
+@import "04_project/**";
+@import "05_utility/**";

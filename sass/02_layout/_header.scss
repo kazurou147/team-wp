@@ -21,34 +21,37 @@ header {
     }
 }
 
-.l-header-wrap {
+.l-header__wrap {
     display: flex;
     margin: 0 auto;
+
     @include tb {
         display: block;
     }
 }
 
-.l-header-left {
+.l-header__left {
     display: flex;
     justify-content: space-between;
     position: relative;
+
     @include tb {
         display: block;
     }
 }
 
-.l-header-branding {
+.l-header__branding {
     width: 200px;
     margin: 0px 0px 0 0px;
     padding: 0px 0;
+
     img {
         width: 100%;
         height: auto;
     }
 }
 
-.l-header-right {
+.l-header__right {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -56,6 +59,7 @@ header {
     width: calc(100% - 200px);
     margin: 0 0 0px 0;
     padding: 0px 0 0 0;
+
     @include tb {
         display: none;
     }
@@ -64,15 +68,17 @@ header {
 
 /* Navi */
 
-.l-nav-wrap {
+.l-nav__wrap {
     display: flex;
     align-items: flex-end;
     //justify-content: space-between;
     margin: 0;
     padding: 40px 20px 0 40px;
+
     @include header {
         padding: 40px 10px 0 10px;
     }
+
     @include tb {
         display: none;
     }

@@ -2,7 +2,7 @@
 
 
 
-<div id="content" class="l-site-content">
+<div  class="l-site-content">
   <!-- サイトコンテンツ -->
 
   <main id="main" class="l-page-area">
@@ -15,7 +15,7 @@
 
 
     <!-- パンくずリスト -->
-    <div class="l-breadcrumbs-wrap">
+    <div class="l-breadcrumps">
       <div class="l-container">
         <div class="c-breadcrumbs">
           <?php if (function_exists('bcn_display')) {
@@ -50,7 +50,7 @@
   </main>
 
 
-  <div class="clear-fix"></div>
+  
 
 </div><!-- class="l-site-content" -->
 

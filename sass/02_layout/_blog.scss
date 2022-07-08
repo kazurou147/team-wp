@@ -1,27 +1,36 @@
 /* ブログ 個別記事 */
 
 // ブログ　全体
-.l-blog-kv {
-    position: relative;
-    height: 180px;
-    margin: 0 0 10px 0;
-    padding: 60px 0 20px 0;
-    background: $main-color;
-    color: #fff;
+.l-blog__cotent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px 50px;
 }
 
+.l-blog__post {
+    width: calc(100% - 300px - 50px);
+
+}
+
+
+
 // ブログ内の文章　デザイン
-.l-post-list {
+.l-post-single {
     p {
         margin: 0em 0 1.5em 0;
     }
+
     table {
         margin: 0em 0 1.5em 0;
         max-width: 100%;
         width: 100%;
+
         @include sp {
             width: 100% !important;
         }
+
         th {
             padding: 10px 10px 10px 10px;
             border-top: none;
@@ -30,18 +39,21 @@
             border-bottom: 2px dotted #DEDEDE;
             background-color: transparent;
             text-align: left;
+
             @include sp {
                 display: block;
                 padding: 10px 10px 0 10px;
                 border-bottom: none;
             }
         }
+
         td {
             padding: 10px 10px 10px 10px;
             border-top: none;
             border-left: none;
             border-right: none;
             border-bottom: 2px dotted #DEDEDE;
+
             @include sp {
                 display: block;
             }
@@ -63,6 +75,7 @@
     width: 100%;
     margin: 0px auto 40px auto;
     padding-top: 80px;
+
     @include sp {
         width: 100%;
     }
@@ -70,6 +83,7 @@
 
 .pagenation_single-prev {
     width: 50%;
+
     a {
         display: block;
         text-decoration: underline;
@@ -78,6 +92,7 @@
 
 .pagenation_single-next {
     width: 50%;
+
     a {
         display: block;
         text-decoration: underline;
@@ -88,27 +103,29 @@
 
 /* ブログ　記事一覧 */
 
-.l-post-list-body {
+.l-post-list__item {
     display: flex;
     padding: 10px 0px;
     border-bottom: 1px dotted #ccc;
 }
 
-.l-post-list-info {
+.l-post-list__info {
     width: 110px;
     margin: 0;
     padding: 0 0 0 0px;
 }
 
-.l-post-list-title {
+.l-post-list__title {
     width: calc(100% - 110px);
     margin-bottom: 5px;
     padding: 0 0px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.6;
+
     a {
         text-decoration: none;
+
         &:hover {
             text-decoration: underline;
         }
@@ -122,11 +139,14 @@
     color: #444;
     text-decoration: none;
     transition: all 0.3s linear;
+
     &:hover {
         text-decoration: none;
+
         img {
             transform: scale(1.1);
         }
+
         .post-list-title {
             text-decoration: none;
         }

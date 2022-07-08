@@ -1,17 +1,17 @@
 // 高さを揃える
-jQuery(function() {
+jQuery(function () {
     jQuery('.c-box01-item').matchHeight();
     jQuery('.front-sec07-list-item__text').matchHeight();
 });
 
 
 //グローバルナビゲーション
-jQuery(function() {
+jQuery(function () {
 
-    jQuery('#c-nav-sp_button-wrap').click(function() {
+    jQuery('#c-nav__button-wrap').click(function () {
 
-        jQuery('.c-nav_sp-button').stop().toggleClass('is-close');
-        jQuery('.c-nav-sp_main').stop().toggleClass('is-open');
+        jQuery('.c-nav__button').stop().toggleClass('is-close');
+        jQuery('.c-nav-sp').stop().toggleClass('is-open');
 
     });
 
@@ -22,7 +22,7 @@ jQuery(function() {
 var firstTime = true;
 
 //グローバルナビゲーション
-jQuery(window).on('load resize', function() {
+jQuery(window).on('load resize', function () {
     function navMenu() {
         //windowの幅を取得
         var winwidth = jQuery(window).width();
@@ -32,10 +32,10 @@ jQuery(window).on('load resize', function() {
         //ナビメニューのホバー
         if (winwidth > 1050) {
             jQuery('.menu-item-has-children').on({
-                'mouseenter': function() {
+                'mouseenter': function () {
                     jQuery(this).children('.sub-menu').addClass('is-open');
                 },
-                'mouseleave': function() {
+                'mouseleave': function () {
                     jQuery(this).children('.sub-menu').removeClass('is-open');
                 }
             });
@@ -44,7 +44,7 @@ jQuery(window).on('load resize', function() {
 
             //ナビの子メニュー（アコーディオン）
             jQuery('.menu-item-has-children').append('<div class="sub-menu-sp-btn"></div>');
-            jQuery('.sub-menu-sp-btn').on('click touch', function() {
+            jQuery('.sub-menu-sp-btn').on('click touch', function () {
                 jQuery(this).prev().slideToggle();
             });
             firstTime = false;
@@ -56,8 +56,8 @@ jQuery(window).on('load resize', function() {
 
 
 //グローバルナビゲーション　サブメニュー
-jQuery(window).on('load', function() {
-    jQuery('.c-nav-sub__global-btn').on('click', function() {
+jQuery(window).on('load', function () {
+    jQuery('.c-nav-sub__global-btn').on('click', function () {
         jQuery('.c-nav-sub__global-list').stop().slideToggle();
     });
 
@@ -68,7 +68,7 @@ jQuery(window).on('load', function() {
 
 
 //ページトップ
-jQuery(window).on('load resize scroll', function() {
+jQuery(window).on('load resize scroll', function () {
 
     //windowの幅を取得
     var winWidth = jQuery(window).width();
@@ -84,9 +84,9 @@ jQuery(window).on('load resize scroll', function() {
 
 
 //ページ内リンク
-jQuery(function() {
+jQuery(function () {
     // #で始まるa要素をクリックした場合に処理
-    jQuery('a[href^="#"]').on('click', function() {
+    jQuery('a[href^="#"]').on('click', function () {
         // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
         var adjust;
         // PCとSPの切り分け
