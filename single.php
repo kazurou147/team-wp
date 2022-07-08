@@ -26,7 +26,7 @@
 
 
     <!--　コンテンツ全体　-->
-    <div class="l-blog-content__outer">
+    <div class="l-blog__content-outer">
       <div class="l-container">
 
         <!-- 2カラム -->
@@ -61,12 +61,12 @@
 
 
 
-                <div class="pagenation_single">
-                  <span class="pagenation_single-prev">
+                <div class="l-single-pagenation">
+                  <span class="l-single-pagenation__prev">
                     <?php previous_post_link('%link', '&lt;&nbsp;古い記事'); ?>
                   </span>
 
-                  <span class="pagenation_single-next">
+                  <span class="l-single-pagenation__next">
                     <?php next_post_link('%link', '新しい記事&nbsp;&gt;'); ?>
                   </span>
                 </div>

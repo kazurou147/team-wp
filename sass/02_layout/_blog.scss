@@ -1,6 +1,6 @@
-/* ブログ 個別記事 */
-
-// ブログ　全体
+/* --------------------------
+ブログ　全体
+--------------------------- */
 .l-blog__cotent {
     display: flex;
     justify-content: space-between;
@@ -61,6 +61,9 @@
     }
 }
 
+
+/* ブログ 個別記事
+--------------------------- */
 .l-post-info {
     margin-bottom: 20px;
     padding: 0 0px 0 0px;
@@ -70,7 +73,17 @@
     text-decoration: none;
 }
 
-.pagenation_single {
+.post-categories {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.l-single-pagenation {
     display: flex;
     width: 100%;
     margin: 0px auto 40px auto;
@@ -79,30 +92,32 @@
     @include sp {
         width: 100%;
     }
-}
 
-.pagenation_single-prev {
-    width: 50%;
+    &__prev {
+        width: 50%;
 
-    a {
-        display: block;
-        text-decoration: underline;
+        a {
+            display: block;
+            text-decoration: underline;
+        }
+    }
+
+    &__next {
+        width: 50%;
+
+        a {
+            display: block;
+            text-decoration: underline;
+            text-align: right;
+        }
     }
 }
 
-.pagenation_single-next {
-    width: 50%;
-
-    a {
-        display: block;
-        text-decoration: underline;
-        text-align: right;
-    }
-}
 
 
-/* ブログ　記事一覧 */
 
+/* ブログ　記事一覧
+--------------------------- */
 .l-post-list__item {
     display: flex;
     padding: 10px 0px;

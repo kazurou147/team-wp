@@ -2,7 +2,7 @@
 
 <?php remove_filter('the_content', 'wpautop'); ?>
 
-<div  class="l-site__content">
+<div class="l-site__content">
   <!-- サイトコンテンツ -->
 
   <main class="l-site__main l-page__main">
@@ -28,7 +28,7 @@
 
 
     <!--　コンテンツ全体　-->
-    <div class="l-page-content-outer">
+    <div class="l-page__content-outer">
       <div class="l-container">
 
 
@@ -53,7 +53,7 @@
   </main>
 
 
-  
+
 
 </div><!-- class="l-site-content" -->
 

@@ -25,7 +25,7 @@
 
 
     <!--　コンテンツ全体　-->
-    <div class="l-blog-content__outer">
+    <div class="l-blog__content-outer">
       <div class="l-container">
 
         <!-- 2カラム -->
@@ -59,7 +59,7 @@
                 <!-- pagenation -->
                 <?php if (paginate_links()) : //ページが1ページ以上あれば以下を表示 
                 ?>
-                <div class="l-blog__pagenation">
+                <div class="l-blog-pagenation">
                   <?php
                     echo
                     paginate_links(

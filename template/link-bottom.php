@@ -1,5 +1,5 @@
 <div class="l-container">
-  <aside class="p-content-bottom-link">
+  <aside class="c-content-bottom">
 
   </aside>
 </div>

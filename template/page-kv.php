@@ -20,6 +20,17 @@
   </div>
 </div>
 
+<!-- 404 -->
+<?php elseif (is_404()) : ?>
+<!-- ページタイトル  -->
+<div class="c-kv">
+  <div class="l-container">
+    <h1 class="c-kv__title">
+      404 Page Not Found
+    </h1>
+  </div>
+</div>
+
 
 <!-- カスタム投稿 -->
 <!--?php elseif (get_post_type() === '') : ?-->

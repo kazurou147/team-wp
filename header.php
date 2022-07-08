@@ -73,7 +73,7 @@
             <!-- /SP Menu Button -->
 
             <!-- SP Menu -->
-            <div class="c-nav-sp">
+            <div class="c-nav__sp">
               <nav>
                 <?php if (has_nav_menu('navigation')) : ?>
                 <?php wp_nav_menu(array(

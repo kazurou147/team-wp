@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function () {
     //ナビボタンの取得
     const navButton = document.querySelector('.c-nav__button');
     //ナビメニューの取得
-    const navMenu = document.querySelector('.c-nav-sp');
+    const navMenu = document.querySelector('.c-nav__sp');
     //オーバーレイの取得
     const navOverlay = document.getElementById('c-nav-overlay');
 

@@ -6,10 +6,15 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+    height: 80px;
     margin: 0 auto 0px auto;
     padding: 0px 0 0 0;
     background-color: #fff;
     z-index: 777;
+
+    @include sp {
+        height: 70px;
+    }
 }
 
 

@@ -10,7 +10,7 @@
 
     <article <?php post_class(); ?>>
 
-      <section class="l-main-visual">
+      <section class="p-main-visual">
 
       </section>
 
@@ -18,7 +18,7 @@
 
 
       <!--  -->
-      <section class="l-front-sec01">
+      <section class="p-front-sec01">
         <div class="l-container">
 
         </div><!-- /container -->
@@ -47,6 +47,8 @@
       <li>
 
       <time datetime="<?php echo esc_html(get_the_date('c')); ?>"><?php echo esc_html(get_the_date()); ?></time>
+
+      <?php the_category(); ?>
 
       <a href="<?php the_permalink() ?>">
         <?php the_title();  ?>
