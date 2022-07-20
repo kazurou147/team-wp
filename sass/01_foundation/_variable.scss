@@ -19,6 +19,7 @@ $break-sp: 767px;
 $break-w800: 840px;
 $break-w1200: 1200px;
 $break-header: 1150px;
+
 @mixin pc {
     @media screen and (max-width: ($break-pc)) {
         @content;
@@ -55,5 +56,5 @@ $break-header: 1150px;
     }
 }
 
-$main-color: #32a3e0;
+$main-color: #142864;
 $gray: #ddd;

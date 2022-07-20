@@ -24,7 +24,7 @@
 
       <header>
 
-        <div class="l-container">
+        <div class="l-container--header">
 
           <div class="l-header__wrap">
 
@@ -33,8 +33,8 @@
               <!-- サイトロゴ -->
               <div class="l-header__branding">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/logo_header.png" alt="">
-
+                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/logo_header.svg" alt="IWD"
+                    width="225" height="28">
                 </a>
               </div>
 
@@ -56,6 +56,12 @@
                   ?>
                   <?php endif; ?>
                 </nav>
+              </div>
+
+              <div class="l-header-contact">
+                <div class="l-header-contact__img">
+                </div>
+                <div class="l-header-contact__text"></div>
               </div>
 
             </div><!-- /l-header-right -->

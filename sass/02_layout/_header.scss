@@ -3,13 +3,14 @@
 /* Header */
 
 header {
-    position: sticky;
+    position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     height: 80px;
     margin: 0 auto 0px auto;
     padding: 0px 0 0 0;
-    background-color: #fff;
+    background-color: transparent;
     z-index: 777;
 
     @include sp {
@@ -46,8 +47,8 @@ header {
 }
 
 .l-header__branding {
-    width: 200px;
-    margin: 0px 0px 0 0px;
+    width: 225px;
+    margin: 28px 10px 0 0px;
     padding: 0px 0;
 
     img {
@@ -61,7 +62,7 @@ header {
     justify-content: flex-end;
     position: relative;
     top: 0px;
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     margin: 0 0 0px 0;
     padding: 0px 0 0 0;
 
@@ -78,11 +79,7 @@ header {
     align-items: flex-end;
     //justify-content: space-between;
     margin: 0;
-    padding: 40px 20px 0 40px;
-
-    @include header {
-        padding: 40px 10px 0 10px;
-    }
+    padding: 28px 00px 0 00px;
 
     @include tb {
         display: none;

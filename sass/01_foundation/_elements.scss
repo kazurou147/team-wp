@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap');
 
 /* 1, Elements  */
 /*
@@ -17,7 +17,7 @@ html {
 body {
     color: #000;
     background-color: #fff;
-    font-family: 'Noto Sans JP', "Yu Gothic Medium", "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-family: 'Open Sans', 'Noto Sans JP', "Yu Gothic Medium", "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 1.8;
