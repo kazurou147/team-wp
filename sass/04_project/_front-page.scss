@@ -7,9 +7,21 @@
     position: relative;
     max-width: 100%;
     width: 100%;
-    //height: 591px;
+    height: 833px;
     margin: auto;
-    background-color: $main-color;
+    background: url(./img/front/img_kv.jpg) no-repeat 50% 50%;
+    background-size: cover;
+
+    &__text {
+        width: 710px;
+        padding: 150px 0 0 30px;
+        max-width: 90%;
+        color: #fff;
+        font-size: 20rem;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 0.8;
+    }
 }
 
 .p-front-sec01 {

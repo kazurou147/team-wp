@@ -11,7 +11,9 @@
     <article <?php post_class(); ?>>
 
       <section class="p-main-visual">
-
+        <div class="l-container">
+          <div class="p-main-visual__text">For the future.</div>
+        </div>
       </section>
 
 

@@ -7,6 +7,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     height: 80px;
     margin: 0 auto 0px auto;
     padding: 0px 0 0 0;
@@ -62,7 +63,7 @@ header {
     justify-content: flex-end;
     position: relative;
     top: 0px;
-    width: calc(100% - 250px);
+    width: calc(100% - 235px);
     margin: 0 0 0px 0;
     padding: 0px 0 0 0;
 
@@ -76,12 +77,47 @@ header {
 
 .l-nav__wrap {
     display: flex;
-    align-items: flex-end;
-    //justify-content: space-between;
+    align-items: center;
     margin: 0;
-    padding: 28px 00px 0 00px;
+    padding: 0px 0px 0 0px;
 
     @include tb {
         display: none;
     }
+}
+
+
+/* contact */
+.l-header-contact {
+    height: 80px;
+    margin-left: 80px;
+    text-align: center;
+    line-height: 1.4;
+
+
+
+    &__link {
+        display: block;
+        height: 80px;
+        position: relative;
+        padding: 20px 50px 0 40px;
+        box-sizing: border-box;
+        background-color: #FF9B00;
+        transition: 0.3s ease-in;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -80px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 80px 83px;
+            border-color: transparent transparent #FF9B00 transparent;
+        }
+    }
+
+    &__img {}
+
 }

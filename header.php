@@ -59,9 +59,12 @@
               </div>
 
               <div class="l-header-contact">
-                <div class="l-header-contact__img">
-                </div>
-                <div class="l-header-contact__text"></div>
+                <a class="l-header-contact__link" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">
+                  <div class="l-header-contact__img">
+                    <img src='<?php echo esc_url(get_template_directory_uri()); ?>/img/icon_mail-sm.png' alt='メールアイコン'>
+                  </div>
+                  <div class="l-header-contact__text">CONTACT</div>
+                </a>
               </div>
 
             </div><!-- /l-header-right -->
